@@ -1,5 +1,4 @@
 import os
-import sys
 import time
 
 dir = os.path.dirname(os.path.abspath(__name__)) # スクリプトのあるディレクトリの絶対パスを取得
