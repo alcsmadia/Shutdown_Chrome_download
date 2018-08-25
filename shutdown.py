@@ -5,6 +5,7 @@ dir = os.path.dirname(os.path.abspath(__name__)) # スクリプトのあるデ�
 
 # ------ ダウンロード中のファイルがなくなるまでループ ---------
 while True:
+    print("Waiting...")
     time.sleep(30)
     n = 0
     for file in os.listdir(dir):
@@ -13,7 +14,6 @@ while True:
             n += 1
             print("File is founded")
             filename = base + ext
-    print("Waiting...")
     if n == 0:
         break
 
