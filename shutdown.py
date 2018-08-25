@@ -16,6 +16,6 @@ while exist >= 1:
             print("File is founded")
             filename = base + ext
     print("Waiting...")
-    time.sleep(2)
+    time.sleep(30)
 
 os.system('shutdown -s -f')
