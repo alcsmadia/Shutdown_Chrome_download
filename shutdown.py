@@ -9,7 +9,6 @@ exist = 1
 while exist >= 1:
     exist = 0
     for file in os.listdir(dir):
-        print(file)
         base, ext = os.path.splitext(file)
         if ext == '.crdownload':
             exist += 1
