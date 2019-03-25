@@ -1,19 +1,17 @@
 import os
 import time
 
-dir = os.path.dirname(os.path.abspath(__name__)) # スクリプトのあるディレクトリの絶対パスを取得
-
 # ------ ダウンロード中のファイルがなくなるまでループ ---------
 while True:
     print("Waiting...")
-    time.sleep(30)
+    
     n = 0
-    for file in os.listdir(dir):
+    for file in os.listdir():
         base, ext = os.path.splitext(file)
         if ext == '.crdownload':
             n += 1
-            print("File is founded")
-            filename = base + ext
+            time.sleep(30)
+    
     if n == 0:
         break
 
